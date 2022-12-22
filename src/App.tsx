@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Routes, Navigate } from 'react-router-dom';
 import './App.scss';
-import Contacts from './components/Contacts/Contacts';
+import Contacts from './pages/Contacts/ContactsPage';
 import Navigation from './components/Navigation/Navigation';
-import Portfolio from './components/Portfolio/Portfolio';
+import Portfolio from './pages/PortfolioPage/PortfolioPage';
 import { MainPage } from './pages/main/Main-page';
 
 function App() {

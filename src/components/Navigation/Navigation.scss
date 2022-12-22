@@ -2,16 +2,17 @@
 @import '../../styles/variables';
 
 .navigation {
-  position: absolute;
+  // position: absolute;
   background: #fff;
   right: 0;
   top: 0;
-  width: 300px;
+  width: 400px;
   height: 100vh;
   background: $color-primary;
   &__list {
     list-style-type: none;
     transform: translateY(50%);
+    letter-spacing: 2px;
   }
   &__item {
     display: block;

@@ -1,6 +1,6 @@
-import Contacts from '../components/Contacts/Contacts';
-import Portfolio from '../components/Portfolio/Portfolio';
 import { MainPage } from '../pages/main/Main-page';
+import ContactsPage from '../pages/Contacts/ContactsPage';
+import PortfolioPage from '../pages/PortfolioPage/PortfolioPage';
 
 export const routes = [
   {
@@ -11,11 +11,11 @@ export const routes = [
   {
     path: '/portfolio',
     name: 'Portfolio',
-    element: <Portfolio />,
+    element: <PortfolioPage />,
   },
   {
     path: '/contacts',
     name: 'Contacts',
-    element: <Contacts />,
+    element: <ContactsPage />,
   },
 ];

@@ -57,6 +57,7 @@
     ]
   },
   "devDependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@reduxjs/toolkit": "^1.9.1",
     "@types/node": "^18.11.10",
     "generate-react-cli": "^8.0.1",
