@@ -46,57 +46,62 @@ export const ContactForm = () => {
 
   return (
     <form ref={form} onSubmit={handleSubmit(sendEmail)} className="contacts__form form">
-      <label>
+      <label className="form__label" htmlFor="from_name">
         Name
-        <input
-          type="text"
-          className="form__input"
-          {...register('from_name', {
-            required: true,
-            maxLength: {
-              value: 20,
-              message: 'Enter no more than 20 characters',
-            },
-            minLength: {
-              value: 2,
-              message: 'Enter at least 2 characters.',
-            },
-            pattern: /^[а-яА-ЯёЁa-zA-Z\s]+$/i,
-          })}
-        />
-        <div className="form__error">
-          <p>{errors.from_name && (errors.from_name?.message || 'Enter the correct data.')}</p>
-        </div>
       </label>
-      <label>
+      <input
+        id="from_name"
+        type="text"
+        className="form__input"
+        {...register('from_name', {
+          required: true,
+          maxLength: {
+            value: 20,
+            message: 'Enter no more than 20 characters',
+          },
+          minLength: {
+            value: 2,
+            message: 'Enter at least 2 characters.',
+          },
+          pattern: /^[а-яА-ЯёЁa-zA-Z\s]+$/i,
+        })}
+      />
+      <div className="form__error">
+        <p>{errors.from_name && (errors.from_name?.message || 'Enter the correct data.')}</p>
+      </div>
+
+      <label htmlFor="from_email" className="form__label">
         Email
-        <input
-          type="email"
-          className="form__input"
-          {...register('from_email', {
-            required: true,
-            pattern: /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/i,
-          })}
-        />
-        <div className="form__error">
-          <p>{errors.from_email && (errors.from_email?.message || 'Enter your correct email.')}</p>
-        </div>
       </label>
-      <label>
+      <input
+        id="from_email"
+        type="email"
+        className="form__input"
+        {...register('from_email', {
+          required: true,
+          pattern: /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/i,
+        })}
+      />
+      <div className="form__error">
+        <p>{errors.from_email && (errors.from_email?.message || 'Enter your correct email.')}</p>
+      </div>
+
+      <label htmlFor="from_email" className="form__label">
         Message
-        <textarea
-          className="form__message"
-          {...register('from_message', {
-            required: true,
-          })}
-        />
-        <div className="form__error">
-          <p>
-            {errors.from_message &&
-              (errors.from_message?.message || 'Enter your message in the field.')}
-          </p>
-        </div>
       </label>
+      <textarea
+        id="from_message"
+        className="form__textarea"
+        {...register('from_message', {
+          required: true,
+        })}
+      />
+      <div className="form__error">
+        <p>
+          {errors.from_message &&
+            (errors.from_message?.message || 'Enter your message in the field.')}
+        </p>
+      </div>
       <div className="form__submit-btn_wrapper">
         <button type="submit" value="Send" className="form__submit-btn">
           submit
