@@ -7,41 +7,34 @@ const Contacts = () => (
       <span>Location:</span> Minsk, Belarus
     </li>
     <li className="contacts__item">
-      <span>Phone:</span>
       <a className="contacts__link" href="tel:+375295661390">
-        {' '}
-        +375 29 566 13 90
+        <span>Phone:</span> +375 29 566 13 90
       </a>
     </li>
     <li className="contacts__item">
-      <span>E-mail:</span>{' '}
       <a className="contacts__link" href="mailto:tatianarusak85@gmail.com">
-        tatianarusak85@gmail.com
+        <span>E-mail:</span> tatianarusak85@gmail.com
       </a>
     </li>
     <li className="contacts__item">
-      <span>GitHub:</span>{' '}
       <a className="contacts__link" href="https://github.com/TatianaRusak">
-        TatianaRusak
+        <span>GitHub:</span> TatianaRusak
       </a>{' '}
     </li>
     <li className="contacts__item">
-      <span>Discord:</span>
       <a className="contacts__link" href="https://discordapp.com/users/913398453462265859/">
-        {' '}
-        Tatiana (@TatianaRusak)
+        <span>Discord:</span> Tatiana (@TatianaRusak)
       </a>
     </li>
     <li className="contacts__item">
-      <span>LinkedIn:</span>
       <a className="contacts__link" href="https://www.linkedin.com/in/tatsiana-rusak/">
-        {' '}
-        Tatsiana Rusak
+        <span>LinkedIn:</span> Tatsiana Rusak
       </a>
     </li>
     <li className="contacts__item">
-      <span>Telegram:</span>
-      <a href="tg://resolve?domain=TatianaRusak"> TatianaRusak</a>
+      <a href="tg://resolve?domain=TatianaRusak">
+        <span>Telegram:</span> TatianaRusak
+      </a>
     </li>
   </ul>
 );
