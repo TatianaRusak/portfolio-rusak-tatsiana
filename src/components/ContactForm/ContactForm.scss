@@ -1,72 +1,57 @@
 @use '../../styles/mixins';
 @import '../../styles/variables';
 
-.contacts {
-  padding-top: 20px;
-  &__header {
-    @include mixins.font-header(900, 28px, 34px);
-    margin-top: 0;
+.form {
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  &__input {
+    width: 100%;
+    height: 40px;
   }
-  &__subheader {
-    @include mixins.font-main(600, 20px, 24px);
-    text-align: center;
-    color: $color-primary;
+  &__textarea {
+    min-width: 100%;
+    height: 200px;
+    resize: none;
   }
-  &__suheader {
-    @include mixins.font-header(900, 28px, 30px);
-  }
-  .form {
-    width: 400px;
-    height: 500px;
+  &__submit-btn_wrapper {
+    height: 36px;
     margin: 0 auto;
-    &__input {
-      width: 100%;
-      height: 40px;
+    margin-top: 40px;
+  }
+  &__submit-btn {
+    width: 100%;
+    height: 100%;
+    background: lighten($color: $color-primary, $amount: 16);
+    border: none;
+    border-radius: 6px;
+    @include mixins.font-main(400, 16px, 20px);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background: $color-primary;
     }
-    &__textarea {
-      min-width: 100%;
-      height: 200px;
-      resize: none;
+    &:active {
+      transform: scaleX(96%);
     }
-    &__submit-btn_wrapper {
-      height: 36px;
-      margin: 0 auto;
-      margin-top: 40px;
-    }
-    &__submit-btn {
-      width: 100%;
-      height: 100%;
-      background: lighten($color: $color-primary, $amount: 16);
-      border: none;
-      border-radius: 6px;
-      @include mixins.font-main(400, 16px, 20px);
-      color: #fff;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      cursor: pointer;
-      transition: all 0.3s;
-      &:hover {
-        background: $color-primary;
-      }
-      &:active {
-        transform: scaleX(96%);
-      }
-    }
-    &__error {
-      height: 10px;
-      color: red;
-      text-align: center;
-      @include mixins.font-main(400, 14px, 18px);
-      padding: 2px 0;
-      margin-bottom: 30px;
-    }
-    &__label {
-      transform: translateY(-50%);
-      background: #fff;
-      padding: 0 8px;
-      position: absolute;
-      margin-left: 8px;
-      color: $color-primary;
-    }
+  }
+  &__error {
+    height: 10px;
+    color: red;
+    text-align: center;
+    @include mixins.font-main(400, 14px, 18px);
+    padding: 2px 0;
+    margin-bottom: 30px;
+  }
+  &__label {
+    transform: translateY(-50%);
+    background: #fff;
+    padding: 0 8px;
+    position: absolute;
+    margin-left: 8px;
+    color: $color-primary;
   }
 }
