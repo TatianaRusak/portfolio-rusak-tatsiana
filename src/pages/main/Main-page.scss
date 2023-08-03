@@ -3,43 +3,50 @@
 
 .main-page {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   &__left {
+    display: block;
+    z-index: 3;
     min-width: 300px;
-    width: 400px;
+    width: 100%;
+    margin: 50px 20px 30px 80px;
+    display: flex;
+    flex-direction: column;
     &_prof {
       @include mixins.font-main(400, 26px, 28px);
       display: block;
-      // text-align: right;
       text-transform: uppercase;
-      margin-top: 50px;
-      margin-right: 20px;
-      margin-left: 80px;
+      text-align: end;
+    }
+    &_about {
+      @include mixins.font-main(400, 18px, 24px);
+      text-align: start;
+      margin-bottom: auto;
     }
   }
   &__image {
     height: 100%;
-    width: auto;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
 .name {
-  margin-top: 300px;
-  transform: translateX(20%);
+  width: fit-content;
   &__first {
     padding: 15px 30px;
     text-transform: uppercase;
     background: $color-secondary;
-    color: #F9FBFF;
+    color: #f9fbff;
     @include mixins.font-header(900, 54px, 70px);
+    letter-spacing: 5px;
   }
   &__second {
     @include mixins.font-header(900, 54px, 70px);
     color: $color-primary;
     text-transform: uppercase;
     margin-left: 30px;
+    text-align: left;
   }
 }

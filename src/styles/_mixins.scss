@@ -1,3 +1,5 @@
+@import './variables';
+
 @mixin font-main($weight, $size, $line) {
   font-family: 'Nunito', sans-serif;
   font-size: $size;
@@ -11,4 +13,9 @@
   line-height: $line;
   font-weight: $weight;
   font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-primary;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
