@@ -12,7 +12,7 @@ export const projects = [
     githubLink: 'https://github.com/TatianaRusak/rs-lang',
   },
   {
-    name: 'Note App',
+    name: 'Note App (React)',
     img: 'note-app',
     delpoyLink: 'https://app-making-notes.netlify.app/',
     githubLink: 'https://github.com/TatianaRusak/notes-app',

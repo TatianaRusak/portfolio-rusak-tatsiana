@@ -22,8 +22,8 @@ const SkillsPage = () => {
 
   return (
     <div className="skills">
-      <h2 className="skills__subheader subheader">you can find out about</h2>
-      <h1 className="skills__header header">my skills</h1>
+      <h2 className="skills__subtitle subtitle">you can find out about</h2>
+      <h1 className="skills__title title">my skills</h1>
 
       <ul className="skills__hard-list">{mySkills}</ul>
 

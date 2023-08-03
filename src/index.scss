@@ -16,12 +16,12 @@ main {
   width: calc(100% - 400px);
 }
 
-.header {
+.title {
   @include mixins.font-header(900, 28px, 34px);
   margin-top: 0;
 }
 
-.subheader {
+.subtitle {
   @include mixins.font-main(600, 20px, 24px);
   text-align: center;
   color: $color-primary;

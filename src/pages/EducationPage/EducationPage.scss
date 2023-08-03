@@ -1,4 +1,51 @@
+@use '../../styles/mixins';
+@import '../../styles/variables';
+
 .education {
   height: 100%;
   padding: 20px 0;
+  &__institution {
+    background: $color-light;
+    padding: 10px;
+    text-align: center;
+    color: $color-primary-dark;
+  }
+  &__list {
+    padding:  10px 15% 10px 15%;
+    list-style-type: none;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: -12px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: darken($color: $color-secondary, $amount: 20);
+    }
+  }
+}
+
+.sertificates {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  .sertificate-img {
+    height: 110px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: solid 3px $color-secondary;
+    transition: transform 0.5s;
+    &:hover {
+      transform: scale(2) ;
+      z-index: 3;
+    }
+  }
 }

@@ -46,8 +46,8 @@ const PortfolioPage = () => {
 
   return (
     <div className="portfolio">
-      <h2 className="portfolio__subheader subheader">here you can see</h2>
-      <h1 className="portfolio__header header">my projects</h1>
+      <h2 className="portfolio__subtitle subtitle">here you can see</h2>
+      <h1 className="portfolio__title title">my projects</h1>
 
       <div className="portfolio__wrapper">{myProjects}</div>
     </div>
