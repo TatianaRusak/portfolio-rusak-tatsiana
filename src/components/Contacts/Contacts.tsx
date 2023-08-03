@@ -17,17 +17,32 @@ const Contacts = () => (
       </a>
     </li>
     <li className="contacts__item">
-      <a className="contacts__link" href="https://github.com/TatianaRusak">
+      <a
+        className="contacts__link"
+        href="https://github.com/TatianaRusak"
+        target="_blank"
+        rel="noreferrer"
+      >
         <span>GitHub:</span> TatianaRusak
       </a>{' '}
     </li>
     <li className="contacts__item">
-      <a className="contacts__link" href="https://discordapp.com/users/913398453462265859/">
+      <a
+        className="contacts__link"
+        href="https://discordapp.com/users/913398453462265859/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <span>Discord:</span> Tatiana (@TatianaRusak)
       </a>
     </li>
     <li className="contacts__item">
-      <a className="contacts__link" href="https://www.linkedin.com/in/tatsiana-rusak/">
+      <a
+        className="contacts__link"
+        href="https://www.linkedin.com/in/tatsiana-rusak/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <span>LinkedIn:</span> Tatsiana Rusak
       </a>
     </li>

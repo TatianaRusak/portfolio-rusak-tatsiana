@@ -20,7 +20,7 @@ export const ContactForm = () => {
     reset,
     formState: { errors },
   } = useForm<FormValues>({
-    mode: 'onBlur',
+    mode: 'onSubmit',
   });
 
   const success = () =>

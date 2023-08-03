@@ -8,8 +8,12 @@
   box-sizing: border-box;
 }
 
+html {
+	overflow-y: scroll;
+}
+
 main {
-  width: 100%;
+  width: calc(100% - 400px);
 }
 
 .header {

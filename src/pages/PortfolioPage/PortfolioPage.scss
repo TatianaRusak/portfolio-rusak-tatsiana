@@ -1,1 +1,73 @@
-.Portfolio {}
+@use '../../styles/mixins';
+@import '../../styles/variables';
+
+.portfolio {
+  height: 100%;
+  padding: 20px 0;
+  background: linear-gradient(to right, $color-light 70%, #fff 70%);
+  &__wrapper {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    padding: 0 10px;
+  }
+  &__project {
+    &-list {
+      min-height: 80%;
+    }
+    &-item {
+      filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.3));
+      background: #fff;
+      width: 30%;
+      margin: 0 auto;
+      padding-bottom: 6px;
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.02);
+        filter: brightness(70%);
+      }
+    }
+    &-descr {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 5px;
+      padding: 0 20px;
+
+    }
+    &-name {
+      @include mixins.font-main(700, 18px, 26px);
+      color: $color-primary-dark;
+      text-align: center;
+      span {
+        font-weight: 300;
+      }
+    }
+    &-image {
+      width: 100%;
+    }
+    &-link {
+      a {
+        display: block;
+        @include mixins.font-main(700, 14px, 28px);
+        text-align: center;
+        color: darken($color-secondary, 15%);
+        transition: all 0.3s;
+      }
+      a:hover {
+        color: $color-primary;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+.react-multi-carousel-item {
+  // border: solid 1px black;
+  // background: yellow;
+  // height: 100%;
+  width: auto;
+  // margin: 0 3px;
+}
