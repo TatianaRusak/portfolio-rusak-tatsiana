@@ -2,6 +2,7 @@
   "name": "portfolio-my",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tatianarusak.github.io/portfolio-rusak-tatsiana",
   "dependencies": {
     "@metahkg/react-link-preview": "^1.15.6",
     "@testing-library/jest-dom": "^5.16.5",
@@ -42,7 +43,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "comp": "generate-react component",
-    "deploy": "gh-pages -d ./build -e portfolio-rusak-tatsiana"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

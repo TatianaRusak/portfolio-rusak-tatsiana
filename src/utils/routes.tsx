@@ -1,4 +1,4 @@
-import MainPage from '../pages/Main/Main-page';
+import MainPage from '../pages/MainPage/Main-page';
 import ContactsPage from '../pages/ContactsPage/ContactsPage';
 import PortfolioPage from '../pages/PortfolioPage/PortfolioPage';
 import SkillsPage from '../pages/SkillsPage/SkillsPage';

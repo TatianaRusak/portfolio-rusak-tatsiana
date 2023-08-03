@@ -5,7 +5,7 @@ import Contacts from './pages/ContactsPage/ContactsPage';
 import Navigation from './components/Navigation/Navigation';
 import Portfolio from './pages/PortfolioPage/PortfolioPage';
 import SkillsPage from './pages/SkillsPage/SkillsPage';
-import MainPage from './pages/Main/Main-page';
+import MainPage from './pages/MainPage/Main-page';
 import Education from './pages/EducationPage/EducationPage';
 
 function App() {
