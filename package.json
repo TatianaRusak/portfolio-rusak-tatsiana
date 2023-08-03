@@ -19,6 +19,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
+    "gh-pages": "^5.0.0",
     "lint-staged": "^12.4.1",
     "nanoid": "^4.0.0",
     "node-sass": "^7.0.3",
@@ -40,7 +41,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "comp": "generate-react component"
+    "comp": "generate-react component",
+    "deploy": "gh-pages -d ./build -e portfolio-rusak-tatsiana"
   },
   "eslintConfig": {
     "extends": [
