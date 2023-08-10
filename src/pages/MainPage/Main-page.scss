@@ -2,27 +2,58 @@
 @import '../../styles/variables';
 
 .main-page {
+  position: relative;
   display: flex;
   height: 100vh;
   width: 100%;
   &__left {
     display: block;
     z-index: 3;
-    max-width: 300px;
-    width: 100%;
+    width: 300px;
     margin: 50px 20px 30px 80px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 914.98px) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      box-sizing: content-box;
+      background: $color-secondary;
+      border: 20px solid rgba(255, 255, 255, 0.6);
+      background-clip: padding-box;
+      width: calc(100% - 80px);
+      margin: 0;
+      padding: 10px 20px 0 20px;
+    }
     &_prof {
       @include mixins.font-main(400, 26px, 28px);
       display: block;
       text-transform: uppercase;
       text-align: end;
+      padding-left: 150px;
+      @media (max-width: 914.98px) {
+        color: #fff;
+        padding: 0;
+        font-size: 20px;
+        letter-spacing: 2px;
+        text-align: left;
+      }
     }
     &_about {
       @include mixins.font-main(400, 18px, 24px);
       text-align: start;
       margin-bottom: auto;
+      @media (max-width: 914.98px) {
+        position: fixed;
+        @include mixins.font-main(400, 14px, 20px);
+        text-align: end;
+        top: 10px;
+        right: 60px;
+        padding: 0 10px;
+        background: rgba(255, 255, 255, 0.8);
+        width: 180px;
+      }
     }
   }
   &__image {
@@ -34,6 +65,12 @@
 
 .name {
   width: fit-content;
+  @media (max-width: 914.98px) {
+    display: flex;
+  }
+  @media (max-width: 575.98px) {
+    display: block;
+  }
   &__first {
     padding: 15px 30px;
     text-transform: uppercase;
@@ -41,6 +78,18 @@
     color: #f9fbff;
     @include mixins.font-header(900, 54px, 70px);
     letter-spacing: 5px;
+    @media (max-width: 914.98px) {
+      padding: 0;
+      letter-spacing: 0;
+      margin: 0 30px 10px 0;
+    }
+    @media (max-width: 711.98px) {
+      @include mixins.font-header(900, 40px, 55px);
+      margin-top: 0;
+    }
+    @media (max-width: 575.98px) {
+      text-align: left;
+    }
   }
   &__second {
     @include mixins.font-header(900, 54px, 70px);
@@ -48,5 +97,17 @@
     text-transform: uppercase;
     margin-left: 30px;
     text-align: left;
+    @media (max-width: 914.98px) {
+      margin: 0 30px 0 0;
+      padding: 0;
+    }
+    @media (max-width: 711.98px) {
+      @include mixins.font-header(900, 40px, 55px);
+      margin-top: 0;
+    }
+    @media (max-width: 575.98px) {
+      margin: 0;
+      text-align: left;
+    }
   }
 }

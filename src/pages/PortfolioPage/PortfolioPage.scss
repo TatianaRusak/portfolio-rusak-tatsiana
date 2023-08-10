@@ -23,6 +23,13 @@
       margin: 0 auto;
       padding-bottom: 6px;
       transition: all 0.3s;
+      @media (max-width: 1110px) {
+        width: 45%;
+      }
+      @media (max-width: 650px) {
+        max-width: 320px;
+        width: 100%;
+      }
       &:hover {
         transform: scale(1.02);
         filter: brightness(70%);
@@ -39,9 +46,10 @@
     &-name {
       @include mixins.font-main(700, 18px, 26px);
       color: $color-primary-dark;
-      text-align: center;
+      text-align: start;
       span {
         font-weight: 300;
+        white-space: nowrap;
       }
     }
     &-image {
@@ -65,9 +73,5 @@
 
 
 .react-multi-carousel-item {
-  // border: solid 1px black;
-  // background: yellow;
-  // height: 100%;
   width: auto;
-  // margin: 0 3px;
 }

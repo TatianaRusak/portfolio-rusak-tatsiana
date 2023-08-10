@@ -16,6 +16,9 @@
     @include mixins.font-main(400, 16px, 22px);
     text-align: center;
     border-bottom: solid 10px $color-light;
+    @media (max-width: 599.98px) {
+      margin-bottom: 50px;
+    }  
   }
   &__item {
     background: $color-light;
@@ -24,6 +27,12 @@
     margin-top: 2px;
     margin-right: 2px;
     transition: all 0.3s;
+    @media (max-width: 875.98px) {
+      flex-basis: calc(50% - 2px);
+    }    
+    @media (max-width: 599.98px) {
+      flex-basis: 100%;
+    }    
     &:first-of-type {
       flex-basis: 100%;
     }
@@ -41,7 +50,6 @@
   }
   &__link{
     display: block;
-    // height: 100%;
     width: 100%;
   }
 }

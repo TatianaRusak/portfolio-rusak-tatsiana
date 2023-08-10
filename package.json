@@ -20,6 +20,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "gh-pages": "^5.0.0",
+    "hamburger-react": "^2.5.0",
     "lint-staged": "^12.4.1",
     "nanoid": "^4.0.0",
     "node-sass": "^7.0.3",

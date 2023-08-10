@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navigation.scss';
+import './Hamburger-react.scss';
 import { routes } from '../../utils/routes';
 import { nanoid } from 'nanoid';
+import { Spin as Hamburger } from 'hamburger-react';
 
 const Navigation = () => {
   const myRoutes = routes.map((route) => {
@@ -18,11 +20,26 @@ const Navigation = () => {
       </li>
     );
   });
+  const [isOpen, setOpen] = useState(false);
+
+  const onToggleBurger = () => {
+    setOpen(!isOpen);
+  };
 
   return (
-    <aside className="navigation">
-      <ul className="navigation__list">{myRoutes}</ul>
-    </aside>
+    <>
+      <Hamburger
+        toggled={isOpen}
+        toggle={setOpen}
+        onToggle={onToggleBurger}
+        color="#ffffff"
+        rounded
+        duration={0.7}
+      />
+      <aside className={isOpen ? 'navigation open' : 'navigation'}>
+        <ul className="navigation__list">{myRoutes}</ul>
+      </aside>
+    </>
   );
 };
 
