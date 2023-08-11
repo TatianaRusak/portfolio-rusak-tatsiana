@@ -35,13 +35,16 @@ export const ContactForm = () => {
       .then(
         (result: ResultType) => {
           console.log('result.text', result);
+          success();
         },
         (error: ErrorType) => {
           console.log('error.message', error.text);
+          toast.error(
+            'Unfortunately, there is an error on the server. Please, use another contact type from the list below.'
+          );
         }
       );
     reset();
-    success();
   };
 
   return (
