@@ -1,6 +1,7 @@
 {
   "name": "portfolio-my",
   "version": "0.1.0",
+  "homepage":  ".",
   "private": true,
   "dependencies": {
     "@metahkg/react-link-preview": "^1.15.6",

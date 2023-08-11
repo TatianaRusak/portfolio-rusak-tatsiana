@@ -49,3 +49,30 @@
   display: block;
   transform: translateY(50px);
 }
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  background: rgba($color: #000000, $alpha: 0.3);
+  transition: none;
+  transform: translateX(-260px);
+}
+
+.navigation.open .overlay {
+  display: block;
+  animation: overlayAppear 1s forwards;
+}
+
+@keyframes overlayAppear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

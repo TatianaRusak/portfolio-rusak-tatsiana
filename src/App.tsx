@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, BrowserRouter as Router, Routes, Navigate } from 'react-router-dom';
 import './App.scss';
 import Contacts from './pages/ContactsPage/ContactsPage';
@@ -9,9 +9,11 @@ import MainPage from './pages/MainPage/Main-page';
 import Education from './pages/EducationPage/EducationPage';
 
 function App() {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <Router>
-      <div className="app">
+      <div className={isOpen ? 'app not-scroll' : 'app'}>
         <main>
           <Routes>
             <Route path="/" element={<MainPage />} />
@@ -22,7 +24,7 @@ function App() {
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
-        <Navigation />
+        <Navigation setOpen={setOpen} isOpen={isOpen} />
       </div>
     </Router>
   );

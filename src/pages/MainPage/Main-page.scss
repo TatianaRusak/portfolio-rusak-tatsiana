@@ -21,6 +21,7 @@
       box-sizing: content-box;
       background: $color-secondary;
       border: 20px solid rgba(255, 255, 255, 0.6);
+      border-bottom-width: 40px;
       background-clip: padding-box;
       width: calc(100% - 80px);
       margin: 0;
@@ -44,6 +45,7 @@
       @include mixins.font-main(400, 18px, 24px);
       text-align: start;
       margin-bottom: auto;
+      width: 200px;
       @media (max-width: 914.98px) {
         position: fixed;
         @include mixins.font-main(400, 14px, 20px);
@@ -52,7 +54,7 @@
         right: 60px;
         padding: 0 10px;
         background: rgba(255, 255, 255, 0.8);
-        width: 180px;
+        width: 250px;
       }
     }
   }

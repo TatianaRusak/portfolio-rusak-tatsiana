@@ -6,8 +6,7 @@ const MainPage = () => {
     <div className="main-page">
       <aside className="main-page__left">
         <p className="main-page__left_about">
-          Fond&nbsp;of&nbsp;complicated and&nbsp;interesting&nbsp;tasks
-          with&nbsp;an&nbsp;amazing&nbsp;design.
+          Fond of complicated and&nbsp;interesting tasks with an&nbsp;amazing design.
         </p>
 
         <h1 className="main-page__left_prof">frontend developer</h1>
