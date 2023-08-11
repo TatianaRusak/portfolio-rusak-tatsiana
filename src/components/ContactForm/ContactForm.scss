@@ -3,8 +3,11 @@
 
 .form {
   width: 400px;
-  height: 500px;
-  margin: 0 auto;
+  margin: 10px auto 40px;
+  @media (max-width: 499.98px) {
+    width: 90%;
+    margin: 10px auto 20px;
+  }  
   &__input {
     width: 100%;
     height: 40px;
@@ -12,14 +15,23 @@
   }
   &__textarea {
     min-width: 100%;
-    height: 200px;
+    height: 150px;
     resize: none;
     padding: 10px;
+    @media (max-width: 499.98px) {
+      height: 100px;
+    }
+    @media (max-width: 349.98px) {
+      height: 60px;
+    }
   }
   &__submit-btn_wrapper {
     height: 36px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 20px;
+    @media (max-width: 349.98px) {
+      margin-top: 0;
+    }
   }
   &__submit-btn {
     width: 100%;
@@ -46,7 +58,13 @@
     text-align: center;
     @include mixins.font-main(400, 14px, 18px);
     padding: 2px 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    @media (max-width: 499.98px) {
+      @include mixins.font-main(400, 12px, 14px);
+    } 
+    @media (max-width: 349.98px) {
+      @include mixins.font-main(400, 11px, 14px);
+    }
   }
   &__label {
     transform: translateY(-50%);

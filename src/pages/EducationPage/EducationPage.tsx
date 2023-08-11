@@ -1,5 +1,6 @@
 import React from 'react';
 import './EducationPage.scss';
+import SertificateGroup from '../../components/Sertificates-group/Sertificates-group';
 
 const Education = () => {
   return (
@@ -25,29 +26,29 @@ const Education = () => {
           <li className="education__item">RS School «React. 2022»</li>
         </ul>
       </div>
-
-      <div className="sertificates">
+      <SertificateGroup />
+      {/* <div className="sertificates">
         <img
-          className="sertificate-img"
+          className="sertificate__img"
           src="./images/sertificates/sert-udemy-1.jpg"
           alt="sertificate"
         />
         <img
-          className="sertificate-img"
+          className="sertificate__img"
           src="./images/sertificates/sert-pre.jpg"
           alt="sertificate"
         />
         <img
-          className="sertificate-img"
+          className="sertificate__img"
           src="./images/sertificates/sert-stage-1-2.jpg"
           alt="sertificate"
         />
         <img
-          className="sertificate-img"
+          className="sertificate__img"
           src="./images/sertificates/sert-stage-3.jpg"
           alt="sertificate"
         />
-      </div>
+      </div> */}
     </div>
   );
 };

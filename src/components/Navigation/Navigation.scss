@@ -5,13 +5,22 @@
   position: fixed;
   right: 0;
   top: 0;
-  width: 400px;
+  width: 260px;
   height: 100vh;
   background: $color-primary;
+  z-index: 30;
+  transition: all 0.5s;
+  @media (max-width: 1110px) {
+    transform: translateX(210px);
+  }
   &__list {
+    width: 100%;
     list-style-type: none;
     transform: translateY(50%);
     letter-spacing: 2px;
+    @media (max-width: 1110px) {
+      display: none;
+    }
   }
   &__item {
     display: block;
@@ -27,5 +36,43 @@
     &.active {
       background: lighten($color-primary, 5%);
     }
+  }
+}
+
+/* меню на планшете */
+
+.navigation.open {
+  transform: translateX(0);
+}
+
+.navigation.open .navigation__list {
+  display: block;
+  transform: translateY(50px);
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  background: rgba($color: #000000, $alpha: 0.3);
+  transition: none;
+  transform: translateX(-260px);
+}
+
+.navigation.open .overlay {
+  display: block;
+  animation: overlayAppear 1s forwards;
+}
+
+@keyframes overlayAppear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

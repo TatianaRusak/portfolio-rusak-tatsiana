@@ -2,7 +2,7 @@ export const projects = [
   {
     name: 'Project App (co-project)',
     img: 'project-management-sys',
-    delpoyLink: 'project-management-app-arumakin.netlify.app',
+    delpoyLink: 'https://project-management-app-arumakin.netlify.app',
     githubLink: 'https://github.com/TatianaRusak/project-management-app',
   },
   {
@@ -44,8 +44,8 @@ export const projects = [
   {
     name: 'Shelter',
     img: 'shelter',
-    delpoyLink: '',
-    githubLink: '',
+    delpoyLink: 'https://tatianarusak.github.io/shelter/',
+    githubLink: 'https://github.com/TatianaRusak/shelter',
   },
   {
     name: 'Piroll',

@@ -36,7 +36,7 @@ const PortfolioPage = () => {
           />
           <div className="portfolio__project-link">
             <a href={project.githubLink} target="_blank" rel="noreferrer">
-              GitHub Link
+              GitHub&nbsp;Link
             </a>
           </div>
         </div>

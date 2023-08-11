@@ -8,21 +8,26 @@
   box-sizing: border-box;
 }
 
-html {
-	overflow-y: scroll;
+.not-scroll {
+  overflow: hidden;
 }
 
 main {
-  width: calc(100% - 400px);
+  width: calc(100% - 260px);
+  @media (max-width: 1110px)   {
+    width: calc(100% - 50px);
+  }
 }
 
 .title {
   @include mixins.font-header(900, 28px, 34px);
   margin-top: 0;
+  padding: 0 10px;
 }
 
 .subtitle {
   @include mixins.font-main(600, 20px, 24px);
   text-align: center;
   color: $color-primary;
+  padding: 0 5px;
 }
