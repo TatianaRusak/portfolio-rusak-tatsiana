@@ -1,5 +1,11 @@
 export const projects = [
   {
+    name: 'Timeless (only layout)',
+    img: 'timeless',
+    delpoyLink: 'https://timeless-landing-project.netlify.app/',
+    githubLink: 'https://github.com/TatianaRusak/timeless',
+  },
+  {
     name: 'Project App (co-project)',
     img: 'project-management-sys',
     delpoyLink: 'https://project-management-app-arumakin.netlify.app',
@@ -30,10 +36,16 @@ export const projects = [
     githubLink: 'https://github.com/TatianaRusak/memory-game',
   },
   {
-    name: 'Online store',
+    name: 'Online store (part)',
     img: 'online-store',
     delpoyLink: 'https://tatianarusak.github.io/online-store/',
     githubLink: 'https://github.com/TatianaRusak/online-store',
+  },
+  {
+    name: 'Sport-Bet (React, mini-task)',
+    img: 'sport-bet',
+    delpoyLink: 'https://sport-bet.netlify.app/',
+    githubLink: 'https://github.com/TatianaRusak/sports-bet',
   },
   {
     name: 'Portfolio',
